@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(Change_Bg.jpg);
+  background-size: 100% 100vh;
+  /* width: 100%; */
+  height: 100vh;
+  font-family: "poppins" sans-serif;
+}
+
+@font-face {
+  font-family: mokgech;
+  src: url(mokgech-font/MokgechRegular-w1qEZ.ttf);
+}
+
+.pillar-home {
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  background: transparent;
+  padding: 1rem 0rem;
+}
+
+.navbar-collapse {
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.navbar-nav,
+.nav-item {
+  padding: 0rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-nav,
+.nav-link {
+  color: #3a833d;
+  font-size: 20px;
+  font-weight: 700;
+}
+.navbar-nav,
+.nav-link:hover {
+  color: #3a833d;
+  font-size: 20px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #3a833d;
+}
+
+.Contact {
+  background: #6bdd80;
+  border-radius: 60px;
+  color: #fff;
+  border: 2px solid #ffff00;
+}
+
+.contact-link {
+  color: #fff;
+}
+.contact-link:hover {
+  color: #fff;
+}
+
+.logo {
+  width: 100%;
+}
+
+.pillar-img {
+  position: absolute;
+  height: 101vh;
+  top: -6px;
+  left: -55px;
+}
+
+.arbic-word {
+  position: absolute;
+  top: 134px;
+  left: 16px;
+  width: 25px;
+  height: 25px;
+}
+.arbic1-word {
+  position: absolute;
+  top: 175px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+}
+.arbic2-word {
+  position: absolute;
+  top: 165px;
+  left: 48px;
+  width: 25px;
+  height: 25px;
+}
+.arbic3-word {
+  position: absolute;
+  top: 200px;
+  left: 24px;
+  width: 25px;
+  height: 25px;
+}
+.arbic4-word {
+  position: absolute;
+  top: 230px;
+  left: 50px;
+  width: 25px;
+  height: 25px;
+}
+.arbic5-word {
+  position: absolute;
+  top: 275px;
+  left: 50px;
+  width: 25px;
+  height: 25px;
+}
+.arbic6-word {
+  position: absolute;
+  top: 270px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+}
+.arbic7-word {
+  position: absolute;
+  top: 300px;
+  left: 25px;
+  width: 25px;
+  height: 25px;
+}
+.arbic8-word {
+  position: absolute;
+  top: 345px;
+  left: 55px;
+  width: 25px;
+  height: 25px;
+}
+.arbic9-word {
+  position: absolute;
+  top: 345px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+}
+.arbic10-word {
+  position: absolute;
+  top: 376px;
+  left: 25px;
+  width: 25px;
+  height: 25px;
+}
+.arbic11-word {
+  position: absolute;
+  top: 400px;
+  left: 50px;
+  width: 25px;
+  height: 25px;
+}
+.arbic12-word {
+  position: absolute;
+  top: 425px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+}
+.arbic13-word {
+  position: absolute;
+  top: 450px;
+  left: 25px;
+  width: 25px;
+  height: 25px;
+}
+.arbic14-word {
+  position: absolute;
+  top: 436px;
+  left: 55px;
+  width: 25px;
+  height: 25px;
+}
+.arbic15-word {
+  position: absolute;
+  top: 480px;
+  left: 55px;
+  width: 25px;
+  height: 25px;
+}
+.arbic16-word {
+  position: absolute;
+  top: 485px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+}
+
+/* content */
+
+.title {
+  color: #3a833d;
+  font-size: 36px;
+  font-family: "poppins";
+}
+
+.content {
+  padding: 20px 40px;
+  /* margin: 0 0px 0px 100px; */
+}
+
+.content-body {
+  height: 65vh;
+  position: relative;
+}
+
+.para {
+  text-align: justify;
+  font-size: 16px;
+  font-family: "poppins";
+}
+
+/* .gold {
+  background-image: url(Splash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: screen;
+} */
+
+.button-home {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-link {
+  padding: 0.5rem 1rem;
+  background: #6bdd80;
+  border-radius: 60px;
+  color: #fff;
+  margin: 5px;
+  border: 2px solid #ffff00;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button-link:hover {
+  text-decoration: none;
+  background: #6bdd80;
+  border-radius: 60px;
+  color: #fff;
+  cursor: pointer;
+}
+.shridi {
+  color: #ffff00;
+}
+
+.arrow {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #6bdd80;
+  border-left: 66px solid transparent;
+  right: -94.8%;
+  top: -49.4px;
+}
+
+.fa-arrow-right {
+  color: #fff;
+}
+
+.arrow-link {
+  position: absolute;
+  bottom: -48px;
+  right: 5px;
+  font-size: 20px;
+  padding: 0px 5px;
+  /* background: #4d1616; */
+  border-radius: 15px 0px 0px 0px;
+  color: #fff;
+}
+
+.bulding {
+  width: 121vh;
+  position: absolute;
+  left: -99px;
+  top: -135px;
+  mix-blend-mode: multiply;
+  height: 80vh;
+}
+
+.bulding1 {
+  width: 105vh;
+  position: absolute;
+  left: -50px;
+  top: -153px;
+  mix-blend-mode: multiply;
+}
+
+.card {
+  position: relative;
+  border: none;
+}
+
+.amenities-img {
+  width: 100%;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.amenities-img1 {
+  width: 100%;
+  position: absolute;
+  top: 45px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.amenities-img2 {
+  width: 100%;
+
+  position: absolute;
+  top: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bodytitle {
+    position: absolute;
+    bottom: -70%;
+    font-size: 18px;
+}
+
+.list-img {
+  width: 15%;
+  margin-left: 30px;
+}
+
+.list-line2 {
+  font-size: 10px;
+  text-align: justify;
+}
+
+.list{
+    margin: 5px;
+}
+
+.list-scroll{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.list-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.list-scroll{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.fullcard{
+    margin-left: -40px;
+}
