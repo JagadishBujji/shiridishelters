@@ -48,26 +48,27 @@ body {
   list-style-type: none;
   padding: 0;
   position: absolute;
-  top: -34px;
-  left: 0px;
-  background: #e95902;
-  width: 100%;
+  top: -50px;
+  left: 50px;
+  /* background: #e95902; */
+  /* width: 100%; */
   font-family: "poppins";
 }
 
 .lists {
   padding: 0 40px;
-  background: #e95902;
+  background: #F4E7DF;
   font-size: 22px;
-  color: #fff;
+  color: #AF3C0D;
   font-weight: 500;
   font-family: "poppins";
+  border-radius: 20px;
   /* padding: 50px; */
   /* background-color: green; */
   /* transition: transform 0.2s; */
    /* Animation */
 
-  margin: 0 auto;
+  margin: auto 3px;
 }
 .lists:hover {
   /* padding: 0 40px; */
@@ -79,6 +80,6 @@ body {
   font-size: 22px;
 }
 
-.list-color {
+/* .list-color {
   background: #d54101;
-}
+} */

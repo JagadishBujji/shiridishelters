@@ -45,7 +45,7 @@
   </head>
   <body>
     <section class="videogallery">
-      <div class="slider">
+      <!-- <div class="slider">
         <input type="radio" name="testimonial" id="t-1" />
         <input type="radio" name="testimonial" id="t-2" />
         <input type="radio" name="testimonial" id="t-3" checked />
@@ -53,29 +53,144 @@
         <input type="radio" name="testimonial" id="t-5" />
         <div class="testimonials">
           <label class="item" for="t-1">
-            <img src="https://dummyimage.com/150" alt="picture" />
+            <img src="Kitchen.webp" alt="picture" />
           </label>
           <label class="item" for="t-2">
-            <img src="https://dummyimage.com/150" alt="picture" />
+            <img src="Kitchen.webp" alt="picture" />
           </label>
           <label class="item" for="t-3">
-            <img src="https://dummyimage.com/150" alt="picture" />
+            <img src="Kitchen.webp" alt="picture" />
           </label>
           <label class="item" for="t-4">
-            <img src="https://dummyimage.com/150" alt="picture" />
+            <img src="Kitchen.webp" alt="picture" />
           </label>
           <label class="item" for="t-5">
-            <img src="https://dummyimage.com/150" alt="picture" />
+            <img src="Kitchen.webp" alt="picture" />
           </label>
         </div>
         <div class="dots">
+          <i class="fa-sharp fa-solid fa-caret-left"></i>
           <label for="t-1"></label>
           <label for="t-2"></label>
+          <div class="playing">
+            <i class="fa-sharp fa-solid fa-caret-right play"></i>
+          </div>
+
           <label for="t-3"></label>
           <label for="t-4"></label>
           <label for="t-5"></label>
+          <i class="fa-solid fa-caret-right"></i>
         </div>
-      </div>
+      </div> -->
+      <main class="main">
+        <div class="container">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-image">
+                  <img
+                    src="https://source.unsplash.com/1280x720/?nature"
+                    alt="Image Slider"
+                    class="caro-img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                  <img
+                    src="https://source.unsplash.com/1280x720/?nature,water,animal"
+                    alt="Image Slider"
+                    class="caro-img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                  <img
+                    src="https://source.unsplash.com/1280x720/?water"
+                    alt="Image Slider"
+                    class="caro-img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                  <img
+                    src="https://source.unsplash.com/1280x720/?animal"
+                    alt="Image Slider"
+                    class="caro-img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                  <img
+                    src="https://source.unsplash.com/1280x720/?travel"
+                    alt="Image Slider"
+                    class="caro-img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-image">
+                  <img
+                    src="https://source.unsplash.com/1280x720/?flower"
+                    alt="Image Slider"
+                    class="caro-img"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Scrollbar -->
+            <div class="swiper-button-next">
+              <!-- <i class="fas fa-chevron-circle-right arrow-icon"></i> -->
+            </div>
+            <div class="swiper-button-prev">
+              <!-- <i class="fas fa-chevron-circle-left arrow-icon"></i> -->
+            </div>
+          </div>
+        </div>
+      </main>
+      <script>
+        var swiper = new Swiper(".swiper-container", {
+          slidesPerView: 3,
+          spaceBetween: 0,
+          centeredSlides: true,
+          freeMode: false,
+          grabCursor: true,
+          effect: "coverflow",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 4,
+            slideShadows: false,
+          },
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            500: {
+              slidesPerView: 1,
+            },
+            700: {
+              slidesPerView: 1.5,
+            },
+          },
+        });
+      </script>
     </section>
   </body>
 </html>

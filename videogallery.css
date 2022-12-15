@@ -10,7 +10,62 @@
   align-items: center;
 }
 
-.slider {
+.caro-img{
+  width: 500px;
+}
+
+.container {
+  max-width: 17rem;
+  width: 100%;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
+
+.main .container .swiper-container .swiper-wrapper .swiper-slide .card-image {
+  background: #ffffff;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+}
+.main
+  .container
+  .swiper-container
+  .swiper-wrapper
+  .swiper-slide
+  .card-image
+  img {
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.main .container .swiper-container .swiper-pagination-bullet {
+  opacity: 0.8;
+  background: #252a32;
+}
+.main .container .swiper-container .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+.main .container .swiper-container .swiper-button-next,
+.main .container .swiper-container .swiper-button-prev {
+  background-image: none;
+  background-size: 0;
+  background-repeat: no-repeat;
+  background-position: 0;
+  margin-top: -1rem;
+}
+.main .container .swiper-container .swiper-button-next .arrow-icon,
+.main .container .swiper-container .swiper-button-prev .arrow-icon {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* .slider {
   width: 100%;
   margin: 50px;
 }
@@ -29,9 +84,8 @@
 .testimonials .item {
   width: 450px;
   height: 50vh;
-  padding: 30px;
+  padding: 5px;
   border-radius: 5px;
-  background-color: #0a0220;
   position: absolute;
   top: 0;
   box-sizing: border-box;
@@ -42,11 +96,10 @@
   cursor: pointer;
 }
 .testimonials .item img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 13px solid #3b344d;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  
 }
 .testimonials .item p {
   color: #ddd;
@@ -126,3 +179,40 @@
 #t-5:checked ~ .testimonials label[for="t-5"] {
   z-index: 4;
 }
+
+.fa-caret-left,
+.fa-caret-right {
+  font-size: 26px;
+  color: #a96b1e;
+  border: 3px solid #b98d47;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play {
+  font-size: 50px;
+  color: #fff;
+  border: 3px solid #b98d47;
+  background: #af7826;
+  border-radius: 50%;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.playing {
+  border: 3px solid #b98d47;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0 20px;
+} */
