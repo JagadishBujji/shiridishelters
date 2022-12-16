@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoanCalculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="loancalculator.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container loanbanner">
+        <div class="row">
+            <div class="col-md-6">
+
+            </div>
+            
+                <div class="col-md-6 details">
+                      <div class = "bankoption" > 
+                        <h5>Loan Calculator</h5>
+                        <div class ="banksinner">
+                      <article id="art" style="border:2px solid; background-color: antiquewhite; width:11vw; height: 7vw; margin-top:2%;">
+                        <img src="" alt="Bank Logo" id="image" height="100%" width="100%">
+                     </article>
+                      <select id="choose" onchange="fun();" width="20%">
+                        <option selected>-- Select Bank --</option>
+                        <option>Hdfc</option>
+                        <option>Indian</option>
+                        <option>Sbi</option>
+                        <option>icici</option>
+                    </select>
+                </div>
+                </div>
+                    <div class="emitext">
+                       <h6>Indicative EMI:₹ <span id="emi">0</span> / Month</h6>
+                    </div>
+                    <div>
+                        <input type="range" id="loan-amount" min="10000" max="100000" value="50000">
+                        <div class="detail">
+                            <p style="color: #9088D2">DownPayment: Rs. <span id="downPayment">50000</span></p>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="range" id="loan-period" min="1" max="12" value="1">
+                        <div class="detail">
+                            <p style="color: #9088D2">Tenure: 0 Months</p>
+                            <!-- <p id="loan-period-text" style="color: #6258A8"></p> -->
+                        </div>
+                    </div>
+                    <div>
+                        <input type="range" id="interest-rate" min="1" max="15" step="0.5" value="0" disabled>
+                        <div class="detail">
+                            <p style="color: #9088D2">Interest Rate: <span id="interest-rate-text">0.0</span>%</p>
+                            <!-- <p id="interest-rate-text" style="color: #6258A8"></p> -->
+                        </div>
+                    </div>
+                    <div class="faqBtn">
+                        <button type="button" class="btn btn-info">frequently asked questions</button>
+                    </div>
+                </div>
+        </div>
+        <script>
+
+            fun = function () {
+                var select = document.getElementById("choose");
+                // var img = document.createElement("img");
+                // var artcle = document.getElementById("art");
+                // var index=select.selectedIndex;
+                var src_arr = [
+                {
+                    img: "",
+                    interest: "0",
+                }
+                ,{
+                    img: "hdfc.png",
+                    interest: "12.5",
+                }, {
+                    img: "indian bank.jpg",
+                    interest: "8.5",
+                }, {
+                    img: "sbi.jpg",
+                    interest: "9.2",
+                }, {
+                    img: "icici.jpg",
+                    interest: "7.5",
+                }];
+                var img=document.getElementById("image");
+                // img.src=src_arr[index];
+                var interest = document.getElementById("interest-rate");
+                var interestText = document.getElementById("interest-rate-text");
+
+                img.src = src_arr[select.selectedIndex].img;
+                interest.value = src_arr[select.selectedIndex].interest;
+                interestText.innerText = src_arr[select.selectedIndex].interest;
+
+                // if (select.selectedIndex == 1) {
+                //     img.src = src_arr[0].img;
+                //     interest.value = src_arr[0].interest;
+                //     interestText.innerText = src_arr[0].interest;
+                // }
+                // else if (select.selectedIndex == 2) {
+                //     img.src = src_arr[1].img;
+                //     interest.value = src_arr[0].interest;
+                //     interestText.innerText = src_arr[0].interest;
+                // }
+                // else if (select.selectedIndex == 3) {
+                //     img.src = src_arr[2].img;
+                // }
+                // else if (select.selectedIndex == 4){
+                //     img.src = src_arr[3].img;
+                // }
+                // else{
+                //     img.src="";
+                //     img.alt="select image";
+                // }
+            }
+        </script>
+</body>
+</html>
