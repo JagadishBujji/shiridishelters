@@ -14,7 +14,7 @@
     <link href="loancalculator.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container loanbanner">
+    <div class="container-fluid loanbanner">
         <div class="row">
             <div class="col-md-6">
             </div>
@@ -42,22 +42,22 @@
                         <input type="range" id="downPayment" min="0" max="100000" step="10000" value="200000">
                         <div class="detail">
                             <p style="color: #9088D2">DownPayment: Rs. <span id="downPaymentText">2000000</span></p>
-                            <p style="color: #9088D2">Loan Amount: Rs. <span id="loanAmountText">8000000</span></p>
+                            <p style="color: #9088D2">Loan Payment: Rs. <span id="loanAmountText">8000000</span></p>
                         </div>
                     </div>
-                    <div>
-                        <input type="range" id="loanPeriod" min="1" max="30" value="12">
-                        <div class="detail">
-                            <p style="color: #9088D2">Tenure:  <span id="loanPeriodText">12</span> Years</p>
+                    <div class="loandetails">
+                        <div>
+                            <p style="color: #9088D2 ; padding-right: 25px">Tenure:  <span id="loanPeriodText">12</span> Years</p>
                             <!-- <p id="loan-period-text" style="color: #6258A8"></p> -->
                         </div>
+                        <input type="range" id="loanPeriod" min="1" max="30" value="12" class="tenureRange">
                     </div>
-                    <div>
-                        <input type="range" id="interestRate" min="1" max="15" step="0.5" value="6.5" disabled>
-                        <div class="detail">
+                    <div class="loandetails">
+                        <div>
                             <p style="color: #9088D2">Interest Rate: <span id="interestRateText">6.5</span>%</p>
                             <!-- <p id="interest-rate-text" style="color: #6258A8"></p> -->
                         </div>
+                        <input type="range" id="interestRate" min="1" max="15" step="0.5" value="6.5" disabled class="interestRange">
                     </div>
                     <div class="faqBtn">
                         <button type="button" class="btn btn-info">frequently asked questions</button>
@@ -117,7 +117,7 @@
                     interest: "9.2",
                 }, {
                     img: "icici.jpg",
-                    interest: "7.5",
+                    interest: "10.5",
                 }];
                 var img=document.getElementById("image");
                 // img.src=src_arr[index];
